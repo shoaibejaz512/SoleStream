@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+       <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/notifyx@latest/dist/notifyx.min.css" />
+  </head>
+
+  <body>
+    <main class="w-full h-full flex flex-col justify-center items-center">
+      <div class="header w-full flex justify-between items-center">
+        <div class="logo">
+          <h1 class="text-[2rem] font-semibold text-white">
+            <a href="index.html">MINI SHOP</a>
+          </h1>
+        </div>
+        <ul class="flex text-white gap-5">
+          <li
+            class="flex justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="crateProduct.html">
+              <i class="fa-solid fa-plus text-[1.5rem]"></i>
+            </a>
+          </li>
+          <li
+            class="flex relative justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="cartPrdoucts.html">
+              <span
+                id="cart-count"
+                class="absolute top-[-10px] text-[14px] right-0 bg-red-700 rounded-full flex justify-center items-center font-bold w-[22px] h-[22px]"
+              ></span>
+              <i class="fa-solid fa-cart-arrow-down text-[1.5rem]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="w-full max-w-6xl flex-1 my-5 bg-white [mask-image:linear-gradient(to_top,transparent,white_30%,white)]
+  [-webkit-mask-image:linear-gradient(to_top,transparent,white_30%,white)]  overflow-y-auto rounded-xl shadow-lg p-6"
+      >
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-2xl font-bold text-gray-800">Your Orders</h1>
+          <div
+            class="bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold"
+          >
+            Total Bill: <span class="text-green-400 mx-2" id="total_bill"></span>
+          </div>
+        </div>
+
+        <!-- Order Item -->
+        <div class="space-y-4 cart-container relative">
+          <!-- Item -->
+          
+        </div>
+      </div>
+    </main>
+
+    
+<!-- JavaScript -->
+<script src="https://unpkg.com/notifyx@latest/dist/notifyx.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/cart.js"></script>
+
+  </body>
+</html>

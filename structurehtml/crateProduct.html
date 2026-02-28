@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <title>Mini-Shop</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/notifyx@latest/dist/notifyx.min.css" />
+
+  </head>
+  <body>
+    <main>
+      <div class="header w-full flex justify-between items-center">
+        <div class="logo">
+          <h1 class="text-[2rem] font-semibold text-white"><a href="index.html">MINI SHOP</a></h1>
+        </div>
+        <ul class="flex text-white gap-5">
+           <li
+            class="flex justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="shop.html">
+              <i class="fa-solid fa-shop"></i>
+            </a>
+          </li>
+          <li
+            class="flex justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="crateProduct.html">
+              <i class="fa-solid fa-plus text-[1.5rem]"></i>
+            </a>
+          </li>
+          <li
+            class="flex relative justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="cartPrdoucts.html">
+              <span
+              id="cart-count"
+                class="absolute top-[-10px] text-[14px] right-0 bg-red-700 rounded-full flex justify-center items-center font-bold w-[22px] h-[22px]"
+                ></span
+              >
+              <i class="fa-solid fa-cart-arrow-down text-[1.5rem]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Product Form Section -->
+      <section
+        class="w-full min-h-screen flex justify-center items-center px-4"
+      >
+        <div
+          class="w-full max-w-xl bg-slate-900 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl"
+        >
+          <h2 class="text-3xl font-bold text-white mb-6 text-center">
+            Add New Product
+          </h2>
+
+          <form class="flex flex-col gap-5 form-container">
+            <!-- Product Name -->
+            <div>
+              <label class="text-sm text-neutral-300">Product Name</label>
+              <input
+                type="text"
+                placeholder="Enter product name"
+                id="product-name"
+                class="w-full mt-1 px-4 py-3 rounded-lg bg-neutral-900/70 text-white placeholder-neutral-400 border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+
+            <!-- Product Price -->
+            <div>
+              <label class="text-sm text-neutral-300">Product Price</label>
+              <input
+                type="number"
+                placeholder="$99.99"
+                id="product-price"
+                class="w-full mt-1 px-4 py-3 rounded-lg bg-neutral-900/70 text-white placeholder-neutral-400 border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+
+            <!-- Product Bio -->
+            <div>
+              <label class="text-sm text-neutral-300"
+                >Product Description</label
+              >
+              <textarea
+                rows="4"
+                placeholder="Write short product description..."
+                id="product-description"
+                class="w-full mt-1 px-4 py-3 rounded-lg bg-neutral-900/70 text-white placeholder-neutral-400 border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Product Image -->
+            <div>
+              <label class="text-sm text-neutral-300">Product Image</label>
+              <input
+                type="text"
+                placeholder="image address..."
+                id="product-image"
+                class="w-full mt-2 text-neutral-300  bg-transparent  border border-2 border-neutral-700 px-10 py-4 rounded-[10px] focus:outline-none focus:ring-indigo-500"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="mt-4 w-full py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold text-lg hover:scale-[1.02] active:scale-95 duration-300 shadow-lg"
+            >
+              🚀 Create Product
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    
+<!-- JavaScript -->
+<script src="https://unpkg.com/notifyx@latest/dist/notifyx.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/index.js" type="module" defer></script>
+
+  </body>
+</html>

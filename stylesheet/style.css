@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff transparent;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-container::-webkit-scrollbar{
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --bg-primary-color: #030712;
+}
+.overlay{
+  padding: 10px 30px;
+}
+.header {
+  padding: 30px 50px;
+}
+.text-2 {
+  margin-top: 60px;
+  z-index: 1000;
+}
+.box3 {
+  margin-block: 20px;
+}
+.box4 {
+  margin-block: 50px;
+}
+.box4 button {
+  padding: 10px 0px;
+}
+
+.sectionone .left {
+  padding: 30px 50px;
+}
+
+.header ul li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.product-container {
+  padding: 30px 50px;
+}
+.product-container .products .product {
+  padding: 15px 20px;
+}
+body {
+  background-color: var(--bg-primary-color);
+}
+
+.shop button , .explore button{
+  padding: .6rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #2d2d2db4 !important;
+  position: relative;
+  color: #bebebe;
+  transition: .5s;
+ 
+}
+
+.shop button span,
+.explore button span{
+  z-index: 1;
+  position: relative;
+}
+
+.shop button::before,
+.explore button::before{
+
+ content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(var(--clr),transparent , transparent);
+    transition: .5s, top 0s, left 0s ;
+    opacity: 0;
+}
+
+
+.shop button:hover,
+.explore button:hover{
+  color: var(--clr);
+   text-shadow: 0 0 10px var(--clr),
+  0 0 40px var(--clr);
+}
+.shop button:hover::before,
+.explore button:hover::before{
+  opacity: 1;
+}
+
+
+.shop button::after,
+.explore button::after{
+  position: absolute;
+  content: "";
+  inset: 3px;
+  background-color: #2d2d2dcc;
+  border-radius: 47px;
+}
+
+
+
+.left{
+  padding: 0px 100px;
+}
+
+#img-1{
+clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+}
+
+#img-2{
+
+clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+#img-3{
+
+clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+#img-4{
+
+clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.author-btn{
+  padding: 8px 20px;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+.feedback-container{
+  padding: 30px 50px;
+}
+
+
+.feedback-container::-webkit-scrollbar{
+  display: none;
+}
+
+.feedback{
+    position: relative;
+    border-radius: 10px;
+   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+   cursor: pointer;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+   padding: 20px 20px;
+}
+
+.feedback:hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+} 
+.img{
+  padding: 2px !important;
+}
+

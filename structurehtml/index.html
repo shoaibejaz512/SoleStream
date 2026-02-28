@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/notifyx@latest/dist/notifyx.min.css"
+    />
+    <link rel="stylesheet" href="../stylesheet/author.css">
+
+    <title>Mini-Shop</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+  <body>
+    <div
+      class="overlay flex items-end w-full h-[100vh] fixed inset-0 z-[10] bg-slate-900"
+    >
+      <div class="overflow-hidden loadingpercentage">
+        <h1 class="text-[15vw] mx-10 text-white counter">0</h1>
+      </div>
+    </div>
+    <main class="w-full opacity-0 relative h-screen flex flex-col">
+      <!-- -----------------nav bar-------------- -->
+      <div class="header z-[5] w-full flex justify-between items-center">
+        <div class="logo">
+          <h1 id="hover-heading" class="text-[2rem] font-semibold text-white">
+            <a href="index.html">
+              <span
+                class="block [font-kerning:none] [text-rendering:optimizeLegibility]"
+                id="span-1"
+                >MINI SHOP</span
+              >
+              <!-- <span aria-hidden="true" class="block [font-kerning:none] [text-rendering:optimizeLegibility]" id="span-2">MINI SHOP</span> -->
+            </a>
+          </h1>
+        </div>
+      
+        <ul class="flex text-white gap-5">
+          <li
+            class="flex justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="crateProduct.html">
+              <i class="fa-solid fa-plus text-[1.5rem] text-white"></i>
+            </a>
+          </li>
+          <li
+            class="flex relative justify-center items-center bg-neutral-200/20 cursor-pointer hover:bg-neutral-100/30 duration-300"
+          >
+            <a href="cartPrdoucts.html">
+              <span
+                id="cart-count"
+                class="absolute top-[-10px] text-[14px] right-0 bg-red-700 rounded-full flex justify-center items-center font-bold w-[22px] h-[22px]"
+              ></span>
+              <i class="fa-solid fa-cart-arrow-down text-[1.5rem] text-[]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ---------------------hero section---------------------- -->
+      <section class="sectionone z-[5] flex w-full flex-1">
+        <div class="left flex flex-col w-1/2 h-full">
+          <div class="box1">
+            <p class="text-[1.2rem] text-white font-semibold tracking-[10px]">
+              AIR JORDAN
+            </p>
+          </div>
+          <div class="box2">
+            <h1 class="text-[5vw] font-bold text-white">MID SE</h1>
+          </div>
+          <div class="box3">
+            <p class="text-[1rem] font-medium text-white/80 w-[100%]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              commodi repudiandae ullam quod quia porro inventore vitae officia
+              dolore, animi, mollitia eveniet unde accusamus obcaecati
+              laboriosam, natus aspernatur facilis illum.officia dolore, animi,
+              mollitia eveniet unde accusamus obcaecati laboriosam, natus
+              aspernatur facilis illum.officia dolore, animi, mollitia eveniet
+              unde accusamus obcaecati laboriosam, natus aspernatur facilis
+              illum.officia dolore, .
+            </p>
+          </div>
+          <div class="box4 flex gap-3 w-full">
+            <div class="shop">
+              <a href="shop.html" class="decoration-none w-full">
+                <button
+                style="--clr:#65bbf0;"
+                  class="uppercase btn cursor-pointer author-btn rounded-[50px] w-[10rem] relative  cursor-pointer overflow-hidden   font-extrabold text-[1.5rem] "
+                >
+                  <span>SHOP</span>
+                </button>
+              </a>
+            </div>
+            <div class="explore">
+              <a href="explore.html" class="decoration-none w-full">
+                <button
+                style="--clr:#65bbf0;"
+                  class="uppercase btn cursor-pointer author-btn rounded-[50px] font-extrabold  w-[10rem] relative  cursor-pointer overflow-hidden text-[1.5rem]"
+                >
+                  <span>Explore</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="right flex flex-col gap-5 w-1/2 h-full">
+          <div class="box1 flex gap-5 w-full">
+            <div
+              class="img1 relative relative group cursor-pointer w-[300px] h-[150px] overflow-hidden rounded-[5px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe2.webp"
+                class="object-cover group-hover:scale-[1.1] duration-200 w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="img2 relative group cursor-pointer overflow-hidden w-[300px] h-[150px] rounded-[10px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe4.jpg"
+                class="w-full h-full group-hover:scale-[1.1] duration-200 object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="box2 flex gap-5 w-full">
+            <div
+              class="img1 relative group cursor-pointer w-[350px] h-[150px] overflow-hidden rounded-[5px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe7.webp"
+                class="object-cover group-hover:scale-[1.1] duration-200 w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="img2 relative group cursor-pointer overflow-hidden w-[300px] h-[150px] rounded-[10px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe8.jpg"
+                class="w-full h-full group-hover:scale-[1.1] duration-200 object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="box3 flex gap-5 w-full">
+            <div
+              class="img1 relative group cursor-pointer w-[200px] h-[150px] overflow-hidden rounded-[5px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe2.webp"
+                class="object-cover group-hover:scale-[1.1] duration-200 w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="img2 relative group cursor-pointer overflow-hidden w-[400px] h-[150px] rounded-[10px]"
+            >
+              <div
+                class="overlay z-[10] flex justify-center items-center absolute w-full h-full inset-0 opacity-0 group-hover:opacity-100 bg-slate-900/60 duration-100"
+              >
+                <span class="text[1.5rem] font-bold text-white">view more</span>
+              </div>
+              <img
+                src="../images/shoe10.jpg"
+                class="w-full h-full group-hover:scale-[1.1] duration-200 object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section
+      class="para w-[100%] h-[100vh] flex justify-center items-center relative"
+    >
+      <div
+        class="cursor transition-300 z-[-1] opacity-0 w-[15px] h-[15px] rounded-full bg-[#84cc16] absolute top-0 left-0"
+      ></div>
+      <div class="para-center w-1/2">
+        <p
+          class="main-para absolute z-[10] opacity-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[1.2rem] font-semibold text-neutral-600"
+        >
+          Step into confidence with footwear designed to move with you. Our
+          shoes blend modern style, premium materials, and all-day comfort to
+          create the perfect balance between fashion and performance. From
+          everyday essentials to statement-making designs, each pair is crafted
+          to elevate your look and support your journey—wherever life takes you.
+          Walk bold. Walk comfortable.
+          <span class="font-extrabold text-[#84cc16]"> Walk unstoppable</span> .
+        </p>
+      </div>
+    </section>
+
+    <!-- ------------------feback section------------------------ -->
+
+    <main class="main-feedback-container w-full h-[50vh] flex flex-col">
+      <div class="feed-back-heading w-full text-center mb-5">
+        <h1 class="title-feedback text-[2rem] text-white font-semibold">
+          WHAT PEOPLE SAY
+        </h1>
+      </div>
+      <section
+        class="feedback-container w-full h-full overflow-x-auto relative flex gap-5"
+      >
+        <div
+          class="feedback flex gap-5 flex-col w-1/3 h-[100%] bg-[#f5f5f5]/10 absolute shrink-0"
+        >
+          <div class="profile  flex gap-4 items-center">
+            <div class="img w-[60px] border border-3 border-white  h-[60px] overflow-hidden rounded-full">
+              <img
+                src="../images/img1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div class="introSection">
+              <h2 class="text[2rem] font-extrabold text-white">
+                 HARSH SHARMA
+              </h2>
+              <!-- -------------------rating start------------------ -->
+            </div>
+          </div>
+          <div class="para">
+            <p
+              class="text-blue-500 font-semibold text-[1.2rem] leading-[1.5rem]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus debitis fugiat maxime beatae dolorem maiores magnam
+              numquam ipsa, eos impedit natus recusandae eius corrupti commodi
+              molestiae non quidem facere culpa.
+            </p>
+          </div>
+        </div>
+        <div
+          class="feedback flex gap-5 flex-col w-1/3 h-[100%] bg-[#f5f5f5]/10 absolute shrink-0"
+        >
+          <div class="profile  flex gap-4 items-center">
+            <div class="img w-[60px] border border-3 border-white  h-[60px] overflow-hidden rounded-full">
+              <img
+                src="../images/img2.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div class="introSection">
+              <h2 class="text[2rem] font-extrabold text-white">
+                JHON MARK
+              </h2>
+              <!-- -------------------rating start------------------ -->
+            </div>
+          </div>
+          <div class="para">
+            <p
+              class="text-blue-500 font-semibold text-[1.2rem] leading-[1.5rem]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus debitis fugiat maxime beatae dolorem maiores magnam
+              numquam ipsa, eos impedit natus recusandae eius corrupti commodi
+              molestiae non quidem facere culpa.
+            </p>
+          </div>
+        </div>
+        <div
+          class="feedback flex gap-5 flex-col w-1/3 h-[100%] bg-[#f5f5f5]/10 absolute shrink-0"
+        >
+          <div class="profile  flex gap-4 items-center">
+            <div class="img w-[60px] border border-3 border-white  h-[60px] overflow-hidden rounded-full">
+              <img
+                src="../images/img3.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div class="introSection">
+              <h2 class="text[2rem] font-extrabold text-white">
+                SARTHAK SHARMA
+              </h2>
+              <!-- -------------------rating start------------------ -->
+            </div>
+          </div>
+          <div class="para">
+            <p
+              class="text-blue-500 font-semibold text-[1.2rem] leading-[1.5rem]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus debitis fugiat maxime beatae dolorem maiores magnam
+              numquam ipsa, eos impedit natus recusandae eius corrupti commodi
+              molestiae non quidem facere culpa.
+            </p>
+          </div>
+        </div>
+        <div
+          class="feedback flex gap-5 flex-col w-1/3 h-[100%] bg-[#f5f5f5]/10 absolute shrink-0"
+        >
+          <div class="profile  flex gap-4 items-center">
+            <div class="img w-[60px] border border-3 border-white  h-[60px] overflow-hidden rounded-full">
+              <img
+                src="../images/img4.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div class="introSection">
+              <h2 class="text[2rem] font-extrabold text-white">
+                JELLY WORK
+              </h2>
+              <!-- -------------------rating start------------------ -->
+            </div>
+          </div>
+          <div class="para">
+            <p
+              class="text-blue-500 font-semibold text-[1.2rem] leading-[1.5rem]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus debitis fugiat maxime beatae dolorem maiores magnam
+              numquam ipsa, eos impedit natus recusandae eius corrupti commodi
+              molestiae non quidem facere culpa.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <div class="animation-section">
+        <div class="image-point">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="item" id="item-1" data-image="../images/img2.jpg">
+            <h5>SHOAIB RAHI</h5>
+        </div>
+        <div class="item" id="item-2" data-image="../images/img5.jpeg">
+            <h5>KUMAIL ABBAS</h5>
+        </div>
+        <div class="item" id="item-3" data-image="../images/img8.png">
+            <h5>OWN ALI</h5>
+        </div>
+        <div class="item" id="item-4" data-image="../images/img6.jpg">
+            <h5>SHOAIB EJAZ</h5>
+        </div>
+        <div class="item" id="item-5" data-image="../images/img1.jpeg">
+            <h5>SHAKIR ZAKIR</h5>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/notifyx@latest/dist/notifyx.min.js"></script>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+      integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../js/three.js" type="module" defer></script>
+    <script src="../js/author.js"></script>
+    <script src="../js/cursorMove.js"></script>
+  </body>
+</html>
