@@ -4,6 +4,8 @@ A high-fidelity, modern footwear e-commerce interface featuring sleek hover-reve
 
 [LIVE DEMO LINK HERE] ---
 
+https://sole-stream.vercel.app/
+
 ## 🌑 The Aesthetic
 This project explores the intersection of **luxury branding** and **interactive frontend development**. It’s not just a store; it's an experience. 
 
